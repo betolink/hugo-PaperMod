@@ -71,9 +71,13 @@
 
 .post-content a,
 .toc a:hover {
+<<<<<<< Updated upstream
     box-shadow: 0 1px 0;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
+=======
+    box-shadow: 0 0px 0;
+>>>>>>> Stashed changes
 }
 
 .post-content a code {
@@ -397,7 +401,7 @@ h1>a>svg {
     display: inline;
 }
 
-img.in-text {
-    display: inline;
-    margin: auto;
-}
+/* img.in-text {*/
+/*     display: inline;*/
+/*     margin: auto;*/
+/* }*/

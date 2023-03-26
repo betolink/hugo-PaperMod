@@ -50,9 +50,13 @@
     {{- end }}
   </footer>
 
-  {{- if (.Param "comments") }}
-  {{- partial "comments.html" . }}
-  {{- end }}
+    <div id="comments">
+      {{ with .Params.GHissueID }}
+        {{ partial "comments.html" $ }}
+      {{ else }}
+        {{ template "_internal/disqus.html" . }}
+      {{ end }}
+    </div>
 </article>
 
 {{- end }}{{/* end main */}}
