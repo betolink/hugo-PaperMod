@@ -162,6 +162,7 @@
 {{- partial "extend_head.html" . -}}
 
 {{- /* Misc */}}
+{{ if .Params.math }}{{ partial "math.html" . }}{{ end }}
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
 {{- template "_internal/google_analytics.html" . }}
 {{- template "partials/templates/opengraph.html" . }}
